@@ -19,17 +19,22 @@ int main() {
     size_t input_len = 0;
     int frequency = 0;
     frequencies[0]++;
-    
+
+    /* Process input and fill buffer for input looping */
     for(int input = 0; scanf("%d\n", &input) != EOF; input_len++) {
         input_buff[input_len] = input;
         frequency += input;
         check_frequency(frequency);
     }
 
+    /* Loop until a frequency is seen two times */
     for(size_t i = 0; i < input_len; i = (i + 1) % input_len ) {
         frequency += input_buff[i];
         check_frequency(frequency);
     }
+
+    puts("This should never happen\n");
+
     return EXIT_FAILURE;
 }
 
