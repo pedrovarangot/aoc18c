@@ -13,3 +13,5 @@ endif()
 add_executable (aoc18_1_1 1/aoc18_1_1.c)
 add_executable (aoc18_1_2 1/aoc18_1_2.c)
 
+add_executable (aoc18_2_1 2/aoc18_2_1.c)
+add_executable (aoc18_2_2 2/aoc18_2_2.c)
