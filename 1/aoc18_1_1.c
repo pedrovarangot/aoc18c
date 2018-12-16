@@ -4,7 +4,7 @@
 int main() {
     int frequency = 0;
 
-    for(int input = 0; scanf("%d\n", &input) != EOF; frequency += input) {
+    for (int input = 0; scanf("%d\n", &input) != EOF; frequency += input) {
         /* Empty loop */
     }
 
